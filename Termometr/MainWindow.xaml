@@ -1,0 +1,52 @@
+﻿<Window x:Class="Termometr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Termometr"
+        mc:Ignorable="d"
+        Title="Termometr" Height="450" Width="800">
+    <Border Padding="10">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label x:Name="current" Content=""
+                   IsEnabled="False" 
+                   FontSize="72" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center"
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center"
+                   Grid.Column="1" Grid.Row="0" />
+
+                <StackPanel Grid.Column="0" Grid.Row="1" Margin="10">
+
+                    <Label x:Name="min" Content="Min temperature: " 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top" 
+                   Height="26" 
+                   Width="105" />
+
+                    <Label x:Name="max" Content="Max temperature"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Height="26" 
+                   Width="101" />
+
+                </StackPanel>
+
+
+            </Grid>
+        </StackPanel>
+    </Border>
+</Window>
